@@ -11,7 +11,7 @@
           class="ru.skorokhod.springcourse.ClassicalMusic">
     </bean>
 
-    <bean id="musicPlayer"
+    <bean id="musicPlayer" scope="prototype"
     class="ru.skorokhod.springcourse.MusicPlayer">
         <property name="music" ref="musicBeanClassic"/>
         <property name="name" value="${musicPlayer.name}"/>
